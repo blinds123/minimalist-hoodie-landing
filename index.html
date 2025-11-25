@@ -2,47 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Hoodie - Premium Organic Cotton | Netlify</title>
+    <meta name="description" content="Discover the Minimalist Hoodie - 100% organic cotton, regular fit with kangaroo pocket. Rated 4.9/5 stars. Pre-order now for $25 or buy today for $69.">
+    <link rel="canonical" href="https://sparkle-hoodie-shop.netlify.app">
 
-    <!-- Primary Meta Tags -->
-    <title>Minimalist Hoodie - Premium Organic Cotton Hoodie | Netlify</title>
-    <meta name="title" content="Minimalist Hoodie - Premium Organic Cotton Hoodie | Netlify">
-    <meta name="description" content="Discover the Minimalist Hoodie - 100% organic cotton, regular fit with kangaroo pocket. Rated 4.9/5 stars. Pre-order now for $25 or buy today for $69. Free shipping on orders over $100.">
-    <meta name="keywords" content="minimalist hoodie, organic cotton hoodie, sustainable fashion, premium hoodie, Netlify apparel">
-    <link rel="canonical" href="https://www.netlify.com/products/minimalist-hoodie">
-
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="product">
-    <meta property="og:url" content="https://www.netlify.com/products/minimalist-hoodie">
-    <meta property="og:title" content="Minimalist Hoodie - Premium Organic Cotton Hoodie">
-    <meta property="og:description" content="100% organic cotton hoodie with regular fit. Rated 4.9/5 stars. Pre-order $25 or buy today $69.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/e0e0e0/333?text=Minimalist+Hoodie">
-    <meta property="product:price:amount" content="69.00">
-    <meta property="product:price:currency" content="USD">
+    <meta property="og:title" content="Minimalist Hoodie - Premium Organic Cotton">
+    <meta property="og:description" content="100% organic cotton hoodie with regular fit. Rated 4.9/5 stars.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=1200&h=630&fit=crop">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.netlify.com/products/minimalist-hoodie">
-    <meta property="twitter:title" content="Minimalist Hoodie - Premium Organic Cotton Hoodie">
-    <meta property="twitter:description" content="100% organic cotton hoodie with regular fit. Rated 4.9/5 stars. Pre-order $25 or buy today $69.">
-    <meta property="twitter:image" content="https://via.placeholder.com/1200x630/e0e0e0/333?text=Minimalist+Hoodie">
-
-    <!-- Performance Optimization: Preconnect to external domains -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://via.placeholder.com" crossorigin>
-    <link rel="dns-prefetch" href="https://via.placeholder.com">
-    <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin>
-    <link rel="dns-prefetch" href="https://upload.wikimedia.org">
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Preload critical resources -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-
-    <!-- Font Awesome with optimized loading -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'; this.onload=null;">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-
-    <!-- Critical CSS Inlined -->
     <style>
         :root {
             --primary-color: #333;
@@ -51,20 +25,24 @@
             --border-color: #e0e0e0;
             --button-dark: #333;
             --button-light: #e0e0e0;
-            --accent-color: #00A38D; /* Netlify Teal */
+            --accent-color: #00A38D;
             --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             font-family: var(--font-family);
-            margin: 0;
-            padding: 0;
             background-color: #fff;
             color: var(--primary-color);
         }
 
         .container {
-            max-width: 480px; /* Simulate mobile width */
+            max-width: 480px;
             margin: 0 auto;
             background-color: #fff;
             overflow-x: hidden;
@@ -79,19 +57,15 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        .icon-btn {
-            background: none;
-            border: none;
+        .header-left i, .header-right i {
             font-size: 20px;
             color: var(--primary-color);
             cursor: pointer;
-            padding: 5px;
-            margin-left: 15px;
-            transition: color 0.2s;
         }
-        .icon-btn:hover { color: var(--accent-color); }
-        .icon-btn:focus { outline: 2px solid var(--accent-color); outline-offset: 2px; }
-        .header-left .icon-btn { margin-left: 0; margin-right: 15px; }
+
+        .header-right i {
+            margin-left: 15px;
+        }
 
         .logo {
             font-size: 22px;
@@ -108,6 +82,8 @@
         .main-image img {
             width: 100%;
             max-width: 300px;
+            height: 350px;
+            object-fit: cover;
             border-radius: 8px;
         }
 
@@ -121,13 +97,19 @@
         .thumbnails img {
             width: 60px;
             height: 60px;
+            object-fit: cover;
             border-radius: 6px;
-            border: 1px solid transparent;
+            border: 2px solid transparent;
             cursor: pointer;
+            transition: border-color 0.2s;
         }
 
         .thumbnails img.active {
             border-color: var(--primary-color);
+        }
+
+        .thumbnails img:hover {
+            border-color: var(--accent-color);
         }
 
         /* Product Details */
@@ -138,23 +120,16 @@
         .product-title {
             font-size: 20px;
             margin-bottom: 5px;
-            font-weight: 600;
-        }
-
-        /* Heading styles */
-        h2, .promise-title, .reviews-title, .as-seen-title {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        h3 {
-            font-size: 16px;
-            margin-bottom: 15px;
         }
 
         .rating {
             color: #FFD700;
             margin-bottom: 10px;
+        }
+
+        .rating span {
+            color: var(--primary-color);
+            margin-left: 5px;
         }
 
         .description {
@@ -164,7 +139,7 @@
             margin-bottom: 15px;
         }
 
-        /* Options (Color & Size) */
+        /* Options */
         .options {
             margin-bottom: 20px;
         }
@@ -189,13 +164,18 @@
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            border: 1px solid var(--border-color);
+            border: 2px solid var(--border-color);
             cursor: pointer;
             transition: transform 0.2s, border-color 0.2s;
         }
-        .color-swatch:hover { transform: scale(1.1); }
-        .color-swatch:focus { outline: 2px solid var(--accent-color); outline-offset: 2px; }
-        .color-swatch.selected { border: 2px solid var(--primary-color); }
+
+        .color-swatch:hover {
+            transform: scale(1.1);
+        }
+
+        .color-swatch.selected {
+            border-color: var(--primary-color);
+        }
 
         .size-btn {
             padding: 8px 16px;
@@ -205,8 +185,11 @@
             border-radius: 4px;
             transition: all 0.2s;
         }
-        .size-btn:hover { border-color: var(--primary-color); }
-        .size-btn:focus { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+
+        .size-btn:hover {
+            border-color: var(--primary-color);
+        }
+
         .size-btn.selected {
             background: var(--primary-color);
             color: #fff;
@@ -237,15 +220,19 @@
             background-color: var(--button-dark);
             color: #fff;
         }
-        .btn-dark:hover { background-color: #000; }
-        .btn-dark:focus { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+
+        .btn-dark:hover {
+            background-color: #000;
+        }
 
         .btn-light {
             background-color: var(--button-light);
             color: var(--primary-color);
         }
-        .btn-light:hover { background-color: #d0d0d0; }
-        .btn-light:focus { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+
+        .btn-light:hover {
+            background-color: #d0d0d0;
+        }
 
         /* Accordions */
         .accordion {
@@ -263,16 +250,37 @@
             padding: 15px 20px;
             cursor: pointer;
             font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .accordion-header:hover {
+            background: var(--bg-light);
+        }
+
+        .accordion-header i {
+            transition: transform 0.3s;
+        }
+
+        .accordion-header.active i {
+            transform: rotate(180deg);
         }
 
         .accordion-content {
             padding: 15px 20px;
-            display: none; /* Hidden by default */
+            display: none;
             color: var(--secondary-color);
         }
 
         .accordion-content.active {
             display: block;
+        }
+
+        .accordion-content ul {
+            padding-left: 20px;
+        }
+
+        .accordion-content li {
+            margin-bottom: 5px;
         }
 
         /* Promise Section */
@@ -339,6 +347,7 @@
             overflow-x: auto;
             gap: 15px;
             padding-bottom: 15px;
+            -webkit-overflow-scrolling: touch;
         }
 
         .review-card {
@@ -347,10 +356,13 @@
             border-radius: 8px;
             padding: 15px;
             background: #fff;
+            flex-shrink: 0;
         }
 
         .review-card img {
             width: 100%;
+            height: 150px;
+            object-fit: cover;
             border-radius: 6px;
             margin-bottom: 10px;
         }
@@ -384,10 +396,12 @@
             justify-content: center;
             gap: 30px;
             opacity: 0.6;
+            flex-wrap: wrap;
         }
 
         .logos img {
             height: 25px;
+            filter: grayscale(100%);
         }
 
         /* Footer */
@@ -400,6 +414,8 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 30px;
         }
 
         .footer-links h3, .newsletter h3 {
@@ -409,7 +425,6 @@
 
         .footer-links ul {
             list-style: none;
-            padding: 0;
         }
 
         .footer-links li {
@@ -419,6 +434,11 @@
         .footer-links a {
             text-decoration: none;
             color: var(--secondary-color);
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
         }
 
         .newsletter-form {
@@ -430,6 +450,7 @@
             padding: 10px;
             border: 1px solid var(--border-color);
             border-radius: 4px 0 0 4px;
+            font-size: 14px;
         }
 
         .newsletter-form button {
@@ -439,6 +460,11 @@
             border: none;
             border-radius: 0 4px 4px 0;
             cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .newsletter-form button:hover {
+            background: #000;
         }
 
         .social-icons {
@@ -450,6 +476,11 @@
             margin-right: 15px;
             font-size: 20px;
             text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .social-icons a:hover {
+            color: var(--accent-color);
         }
 
         .copyright {
@@ -460,29 +491,10 @@
             padding-top: 20px;
         }
 
-        /* Skip Navigation (Accessibility) */
-        .skip-navigation {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #000;
-            color: #fff;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 100;
-        }
-        .skip-navigation:focus {
-            top: 0;
-        }
-
-        /* Additional Mobile Optimizations */
+        /* Responsive */
         @media (max-width: 480px) {
             .footer-content {
                 flex-direction: column;
-            }
-            .logos {
-                gap: 20px;
-                flex-wrap: wrap;
             }
         }
 
@@ -490,204 +502,72 @@
         html {
             scroll-behavior: smooth;
         }
-
-        /* Reviews slider improvements */
-        .reviews-slider {
-            -webkit-overflow-scrolling: touch;
-            scroll-behavior: smooth;
-        }
     </style>
-
-    <!-- Structured Data (JSON-LD) for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "Minimalist Hoodie",
-        "image": [
-            "https://via.placeholder.com/300x350/e0e0e0/333?text=Grey+Hoodie",
-            "https://via.placeholder.com/60/e0e0e0/333?text=Grey",
-            "https://via.placeholder.com/60/000000/fff?text=Black",
-            "https://via.placeholder.com/60/000080/fff?text=Navy"
-        ],
-        "description": "The Minimalist Hoodie is a modern staple crafted from 100% organic cotton. Featuring a regular fit and kangaroo pocket, this premium hoodie combines comfort with timeless style. Perfect for everyday wear.",
-        "sku": "NETLIFY-HOODIE-MIN-001",
-        "mpn": "HOODIE-MIN",
-        "brand": {
-            "@type": "Brand",
-            "name": "Netlify"
-        },
-        "offers": {
-            "@type": "AggregateOffer",
-            "url": "https://www.netlify.com/products/minimalist-hoodie",
-            "priceCurrency": "USD",
-            "lowPrice": "25.00",
-            "highPrice": "69.00",
-            "offerCount": "2",
-            "offers": [
-                {
-                    "@type": "Offer",
-                    "name": "Pre-Order",
-                    "price": "25.00",
-                    "priceCurrency": "USD",
-                    "availability": "https://schema.org/PreOrder",
-                    "priceValidUntil": "2025-12-31"
-                },
-                {
-                    "@type": "Offer",
-                    "name": "Buy Today",
-                    "price": "69.00",
-                    "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock",
-                    "priceValidUntil": "2025-12-31"
-                }
-            ]
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "156",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "review": [
-            {
-                "@type": "Review",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                },
-                "author": {
-                    "@type": "Person",
-                    "name": "Martin Smith"
-                },
-                "reviewBody": "The Minimalist Hoodie is incredibly comfortable and well-made. The organic cotton feels amazing and the fit is perfect. Highly recommend!"
-            },
-            {
-                "@type": "Review",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                },
-                "author": {
-                    "@type": "Person",
-                    "name": "Jessica A."
-                },
-                "reviewBody": "Best hoodie I've ever owned. The quality is outstanding and it's held up perfectly after multiple washes. Worth every penny!"
-            },
-            {
-                "@type": "Review",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                },
-                "author": {
-                    "@type": "Person",
-                    "name": "Maya Norton"
-                },
-                "reviewBody": "Love the minimalist design and sustainable materials. It's become my go-to hoodie for both casual and active wear."
-            }
-        ],
-        "color": ["Grey", "Black", "Navy"],
-        "size": ["S", "M", "L", "XL"],
-        "material": "100% Organic Cotton",
-        "additionalProperty": [
-            {
-                "@type": "PropertyValue",
-                "name": "Fit",
-                "value": "Regular"
-            },
-            {
-                "@type": "PropertyValue",
-                "name": "Pocket",
-                "value": "Kangaroo"
-            },
-            {
-                "@type": "PropertyValue",
-                "name": "Made In",
-                "value": "Portugal"
-            }
-        ]
-    }
-    </script>
 </head>
 <body>
-    <!-- Skip Navigation for Accessibility -->
-    <a href="#main-content" class="skip-navigation">Skip to main content</a>
-
     <div class="container">
         <header>
-            <nav class="header-left" aria-label="Main navigation">
-                <button aria-label="Menu" class="icon-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+            <div class="header-left">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="logo">Netlify</div>
-            <nav class="header-right" aria-label="Utility navigation">
-                <button aria-label="Search" class="icon-btn">
-                    <i class="fas fa-search"></i>
-                </button>
-                <button aria-label="Shopping cart" class="icon-btn">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
-            </nav>
+            <div class="header-right">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
         </header>
 
-        <main id="main-content" role="main">
-            <div class="product-gallery">
-                <div class="main-image">
-                    <img src="https://via.placeholder.com/300x350/e0e0e0/333?text=Grey+Hoodie" alt="Minimalist Grey Hoodie - Front View" width="300" height="350">
-                </div>
-                <div class="thumbnails" role="list">
-                    <img src="https://via.placeholder.com/60/e0e0e0/333?text=Grey" class="active" alt="Grey color option" width="60" height="60" role="listitem">
-                    <img src="https://via.placeholder.com/60/000000/fff?text=Black" alt="Black color option" width="60" height="60" role="listitem">
-                    <img src="https://via.placeholder.com/60/000080/fff?text=Navy" alt="Navy color option" width="60" height="60" role="listitem">
-                    <img src="https://via.placeholder.com/60/e0e0e0/333?text=Back" alt="Back view of hoodie" width="60" height="60" role="listitem">
-                </div>
+        <div class="product-gallery">
+            <div class="main-image">
+                <img id="mainImage" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=700&fit=crop" alt="Minimalist Hoodie">
             </div>
+            <div class="thumbnails">
+                <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=120&h=120&fit=crop" class="active" alt="Grey" data-full="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=700&fit=crop">
+                <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=120&h=120&fit=crop" alt="Black" data-full="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&h=700&fit=crop">
+                <img src="https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?w=120&h=120&fit=crop" alt="Navy" data-full="https://images.unsplash.com/photo-1578768079052-aa76e52ff62e?w=600&h=700&fit=crop">
+                <img src="https://images.unsplash.com/photo-1542574271-7f3b92e6c821?w=120&h=120&fit=crop" alt="Back View" data-full="https://images.unsplash.com/photo-1542574271-7f3b92e6c821?w=600&h=700&fit=crop">
+            </div>
+        </div>
 
-            <div class="product-details">
+        <div class="product-details">
             <h1 class="product-title">Minimalist Hoodie</h1>
-            <div class="rating" role="img" aria-label="Rated 4.9 out of 5 stars">
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star" aria-hidden="true"></i>
-                <i class="fas fa-star-half-alt" aria-hidden="true"></i>
-                <span style="color: var(--primary-color); margin-left: 5px;">4.9</span>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.9</span>
             </div>
-            <p class="description">The Minimalist Hoodie is a modern staple crafted from 100% organic cotton. Featuring a regular fit and kangaroo pocket, this premium hoodie combines comfort with timeless style. Perfect for everyday wear.</p>
+            <p class="description">The Minimalist Hoodie is a modern staple crafted from 100% organic cotton. Featuring a regular fit and kangaroo pocket, this premium hoodie combines comfort with timeless style.</p>
 
             <div class="options">
                 <div class="option-group">
-                    <label class="option-label" id="color-label">Color</label>
-                    <div class="color-options" role="radiogroup" aria-labelledby="color-label">
-                        <button class="color-swatch selected" style="background-color: #ccc;" role="radio" aria-checked="true" aria-label="Grey" data-color="grey" tabindex="0"></button>
-                        <button class="color-swatch" style="background-color: #000;" role="radio" aria-checked="false" aria-label="Black" data-color="black" tabindex="-1"></button>
-                        <button class="color-swatch" style="background-color: #000080;" role="radio" aria-checked="false" aria-label="Navy" data-color="navy" tabindex="-1"></button>
+                    <label class="option-label">Color</label>
+                    <div class="color-options">
+                        <div class="color-swatch selected" style="background-color: #ccc;" data-color="grey"></div>
+                        <div class="color-swatch" style="background-color: #000;" data-color="black"></div>
+                        <div class="color-swatch" style="background-color: #000080;" data-color="navy"></div>
                     </div>
                 </div>
                 <div class="option-group">
-                    <label class="option-label" id="size-label">Size</label>
-                    <div class="size-options" role="radiogroup" aria-labelledby="size-label">
-                        <button class="size-btn" role="radio" aria-checked="false" data-size="S">S</button>
-                        <button class="size-btn selected" role="radio" aria-checked="true" data-size="M">M</button>
-                        <button class="size-btn" role="radio" aria-checked="false" data-size="L">L</button>
-                        <button class="size-btn" role="radio" aria-checked="false" data-size="XL">XL</button>
+                    <label class="option-label">Size</label>
+                    <div class="size-options">
+                        <button class="size-btn" data-size="S">S</button>
+                        <button class="size-btn selected" data-size="M">M</button>
+                        <button class="size-btn" data-size="L">L</button>
+                        <button class="size-btn" data-size="XL">XL</button>
                     </div>
                 </div>
             </div>
 
             <div class="actions">
-                <button class="btn btn-dark">PRE-ORDER - $25</button>
-                <button class="btn btn-light">ADD TO CART TODAY - $69</button>
+                <button class="btn btn-dark" id="preorder">PRE-ORDER - $25</button>
+                <button class="btn btn-light" id="addtocart">ADD TO CART TODAY - $69</button>
             </div>
         </div>
 
-        <section class="accordion" aria-label="Product Information">
+        <div class="accordion">
             <div class="accordion-item">
                 <div class="accordion-header">Product Details <i class="fas fa-chevron-down"></i></div>
                 <div class="accordion-content">
@@ -707,83 +587,81 @@
                 <div class="accordion-header">Materials & Care <i class="fas fa-chevron-down"></i></div>
                 <div class="accordion-content">Machine wash cold. Tumble dry low. Do not bleach.</div>
             </div>
-        </section>
+        </div>
 
-        <section class="promise-section" aria-label="Our Promise">
-            <i class="fas fa-shield-alt promise-icon" aria-hidden="true"></i>
-            <h2 class="promise-title">Our Promise</h2>
+        <div class="promise-section">
+            <i class="fas fa-shield-alt promise-icon"></i>
+            <div class="promise-title">Our Promise</div>
             <p class="promise-text">Quality craftsmanship and sustainable practices are at the heart of everything we do. We stand behind every product with our satisfaction guarantee.</p>
-        </section>
+        </div>
 
-        <section class="reviews-section" aria-label="Customer Reviews">
+        <div class="reviews-section">
             <div class="reviews-header">
-                <h2 class="reviews-title">Reviews</h2>
+                <div class="reviews-title">Reviews</div>
                 <a href="#" class="see-all">See all</a>
             </div>
             <div class="reviews-summary">
                 4.9
-                <div class="rating" role="img" aria-label="Average rating 4.9 out of 5 stars">
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star" aria-hidden="true"></i>
-                    <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
                 </div>
             </div>
             <div class="reviews-slider">
-                <article class="review-card">
-                    <img src="https://via.placeholder.com/250x150/e0e0e0/333?text=User+Image+1" alt="Customer review photo by Martin Smith" loading="lazy" width="250" height="150">
-                    <div class="rating" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"The Minimalist Hoodie is incredibly comfortable and well-made. The organic cotton feels amazing and the fit is perfect. Highly recommend!"</p>
+                <div class="review-card">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=300&fit=crop" alt="Review 1">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"The Minimalist Hoodie is incredibly comfortable and well-made. The organic cotton feels amazing and the fit is perfect!"</p>
                     <p class="review-author">- Martin Smith</p>
-                </article>
-                <article class="review-card">
-                    <img src="https://via.placeholder.com/250x150/000/fff?text=User+Image+2" alt="Customer review photo by Jessica A." loading="lazy" width="250" height="150">
-                    <div class="rating" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Best hoodie I've ever owned. The quality is outstanding and it's held up perfectly after multiple washes. Worth every penny!"</p>
+                </div>
+                <div class="review-card">
+                    <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=500&h=300&fit=crop" alt="Review 2">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Best hoodie I've ever owned. The quality is outstanding and it's held up perfectly after multiple washes."</p>
                     <p class="review-author">- Jessica A.</p>
-                </article>
-                <article class="review-card">
-                    <img src="https://via.placeholder.com/250x150/000080/fff?text=User+Image+3" alt="Customer review photo by Maya Norton" loading="lazy" width="250" height="150">
-                    <div class="rating" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="review-text">"Love the minimalist design and sustainable materials. It's become my go-to hoodie for both casual and active wear."</p>
+                </div>
+                <div class="review-card">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&h=300&fit=crop" alt="Review 3">
+                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Love the minimalist design and sustainable materials. It's become my go-to hoodie for casual and active wear."</p>
                     <p class="review-author">- Maya Norton</p>
-                </article>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section class="as-seen-on" aria-label="As Seen On">
-            <h2 class="as-seen-title">As Seen On</h2>
+        <div class="as-seen-on">
+            <div class="as-seen-title">As Seen On</div>
             <div class="logos">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Forbes_logo.svg/1280px-Forbes_logo.svg.png" alt="Forbes logo" loading="lazy" width="100" height="25">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" alt="Google logo" loading="lazy" width="100" height="25">
-                <img src="https://via.placeholder.com/100x25/e0e0e0/333?text=Libertor" alt="Libertor logo" loading="lazy" width="100" height="25">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Forbes_logo.svg/200px-Forbes_logo.svg.png" alt="Forbes">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png" alt="Google">
             </div>
-        </section>
-        </main>
+        </div>
 
-        <footer role="contentinfo">
+        <footer>
             <div class="footer-content">
-                <nav class="footer-links" aria-label="Footer navigation">
+                <div class="footer-links">
                     <h3>Netlify</h3>
                     <ul>
-                        <li><a href="#" tabindex="0">Home</a></li>
-                        <li><a href="#" tabindex="0">Commands</a></li>
-                        <li><a href="#" tabindex="0">Links</a></li>
-                        <li><a href="#" tabindex="0">Contact Us</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
-                </nav>
+                </div>
                 <div class="newsletter">
                     <h3>Newsletter Signup</h3>
-                    <form class="newsletter-form" id="newsletter-form" aria-label="Newsletter signup form">
-                        <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address for newsletter" autocomplete="email">
-                        <button type="submit" aria-label="Subscribe to newsletter"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-chevron-right"></i></button>
                     </form>
-                    <div class="social-icons" role="navigation" aria-label="Social media links">
-                        <a href="#" aria-label="Follow us on Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Follow us on Instagram" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Subscribe on YouTube" rel="noopener noreferrer" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Follow us on Pinterest" rel="noopener noreferrer" target="_blank"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </div>
                 </div>
             </div>
@@ -794,41 +672,17 @@
     </div>
 
     <script>
-        // Wait for DOM to be fully loaded
         document.addEventListener('DOMContentLoaded', function() {
-
-            // Accordion functionality with accessibility
+            // Accordion functionality
             const accordions = document.querySelectorAll('.accordion-header');
-            accordions.forEach((acc, index) => {
-                // Add ARIA attributes
-                acc.setAttribute('role', 'button');
-                acc.setAttribute('aria-expanded', 'false');
-                acc.setAttribute('tabindex', '0');
-                acc.setAttribute('id', `accordion-header-${index}`);
-
-                const content = acc.nextElementSibling;
-                content.setAttribute('role', 'region');
-                content.setAttribute('aria-labelledby', `accordion-header-${index}`);
-
-                // Click handler
+            accordions.forEach(acc => {
                 acc.addEventListener('click', function() {
-                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
-                    this.setAttribute('aria-expanded', !isExpanded);
+                    this.classList.toggle('active');
+                    const content = this.nextElementSibling;
                     content.classList.toggle('active');
-
                     const icon = this.querySelector('i');
-                    if (icon) {
-                        icon.classList.toggle('fa-chevron-down');
-                        icon.classList.toggle('fa-chevron-up');
-                    }
-                });
-
-                // Keyboard navigation (Enter/Space)
-                acc.addEventListener('keydown', function(e) {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        this.click();
-                    }
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
                 });
             });
 
@@ -836,19 +690,8 @@
             const colorSwatches = document.querySelectorAll('.color-swatch');
             colorSwatches.forEach(swatch => {
                 swatch.addEventListener('click', function() {
-                    // Remove selected state from all swatches
-                    colorSwatches.forEach(s => {
-                        s.classList.remove('selected');
-                        s.setAttribute('aria-checked', 'false');
-                        s.setAttribute('tabindex', '-1');
-                    });
-
-                    // Add selected state to clicked swatch
+                    colorSwatches.forEach(s => s.classList.remove('selected'));
                     this.classList.add('selected');
-                    this.setAttribute('aria-checked', 'true');
-                    this.setAttribute('tabindex', '0');
-
-                    console.log('Selected color:', this.getAttribute('data-color'));
                 });
             });
 
@@ -856,71 +699,58 @@
             const sizeButtons = document.querySelectorAll('.size-btn');
             sizeButtons.forEach(btn => {
                 btn.addEventListener('click', function() {
-                    // Remove selected state from all buttons
-                    sizeButtons.forEach(b => {
-                        b.classList.remove('selected');
-                        b.setAttribute('aria-checked', 'false');
-                    });
-
-                    // Add selected state to clicked button
+                    sizeButtons.forEach(b => b.classList.remove('selected'));
                     this.classList.add('selected');
-                    this.setAttribute('aria-checked', 'true');
-
-                    console.log('Selected size:', this.getAttribute('data-size'));
                 });
             });
 
-            // Thumbnail image gallery
+            // Thumbnail gallery - switches main image
             const thumbnails = document.querySelectorAll('.thumbnails img');
-            const mainImage = document.querySelector('.main-image img');
+            const mainImage = document.getElementById('mainImage');
 
-            if (thumbnails.length > 0 && mainImage) {
-                thumbnails.forEach(thumb => {
-                    thumb.addEventListener('click', function() {
-                        // Remove active state from all thumbnails
-                        thumbnails.forEach(t => t.classList.remove('active'));
-
-                        // Add active state to clicked thumbnail
-                        this.classList.add('active');
-
-                        // Update main image (would need actual image URLs)
-                        const thumbSrc = this.getAttribute('src');
-                        console.log('Thumbnail clicked:', thumbSrc);
-                        // In production: mainImage.src = getFullSizeImage(thumbSrc);
-                    });
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    mainImage.src = this.getAttribute('data-full');
                 });
-            }
+            });
 
-            // Newsletter form submission
-            const newsletterForm = document.getElementById('newsletter-form');
-            if (newsletterForm) {
-                newsletterForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-
-                    const emailInput = this.querySelector('input[type="email"]');
-                    const email = emailInput.value.trim();
-
-                    if (email) {
-                        console.log('Newsletter subscription for:', email);
-                        // In production: send to API
-                        alert('Thank you for subscribing!');
-                        emailInput.value = '';
-                    }
-                });
-            }
+            // Newsletter form
+            document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = this.querySelector('input');
+                const btn = this.querySelector('button');
+                btn.innerHTML = '<i class="fas fa-check"></i>';
+                btn.style.background = '#00A38D';
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+                    btn.style.background = '';
+                    input.value = '';
+                }, 2000);
+            });
 
             // Add to cart buttons
-            const cartButtons = document.querySelectorAll('.btn');
-            cartButtons.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const selectedColor = document.querySelector('.color-swatch.selected')?.getAttribute('data-color') || 'grey';
-                    const selectedSize = document.querySelector('.size-btn.selected')?.getAttribute('data-size') || 'M';
-                    const action = this.textContent.includes('PRE-ORDER') ? 'pre-order' : 'add-to-cart';
+            document.getElementById('preorder').addEventListener('click', function() {
+                const originalText = this.textContent;
+                this.textContent = '✓ ADDED!';
+                this.style.background = '#00A38D';
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.style.background = '';
+                }, 2000);
+            });
 
-                    console.log('Action:', action, 'Color:', selectedColor, 'Size:', selectedSize);
-                    // In production: send to cart API
-                    alert(`Added ${selectedSize} ${selectedColor} hoodie to cart!`);
-                });
+            document.getElementById('addtocart').addEventListener('click', function() {
+                const originalText = this.textContent;
+                this.textContent = '✓ ADDED!';
+                this.style.background = '#00A38D';
+                this.style.color = '#fff';
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.style.background = '';
+                    this.style.color = '';
+                }, 2000);
             });
         });
     </script>
